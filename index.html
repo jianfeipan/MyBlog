@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
+	<link rel="import" id="template-file" href="2016_1_31.html">
+	
     <title>Myblog by jianfeipan</title>
   </head>
 
@@ -52,6 +54,13 @@
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
 
 <p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+
+	<script>
+		var getImport  = document.querySelector('#template-file');
+		var getContent = getImport.import.querySelector('#content');
+	    document.body.appendChild(document.importNode(getContent, true));
+	</script>
+	
       </section>
     </div>
 
